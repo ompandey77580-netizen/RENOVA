@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building Materials — Renova</title>
+  <meta name="description" content="Compare cement, paints, tiles, wood and plumbing materials at honest market prices on Renova. Tick Compare on two or three items to see them side by side." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Renova — home">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+          <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="wordmark">Ren<span>ova</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="find-contractors.html">Find Contractors</a>
+        <a href="cost-estimator.html">Cost Estimator</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="materials.html" class="active">Materials</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="smart-advisor.html">Smart Advisor</a>
+        <a href="login.html" class="show-mobile">Login</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline btn-sm login-btn">Login</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Materials</span></nav>
+        <h1>Building Materials</h1>
+        <p>Honest market prices on quality materials. Tick 'Compare' on any two or three items to see them side by side.</p>
+      </div>
+    </section>
+
+    <!-- ================= SHOP ================= -->
+    <section class="section">
+      <div class="container shop-layout">
+
+        <aside class="filters">
+          <h3>Categories</h3>
+          <div class="filter-group">
+            <label class="filter-opt"><input type="checkbox" checked /> Cement (24)</label>
+            <label class="filter-opt"><input type="checkbox" /> Paints (38)</label>
+            <label class="filter-opt"><input type="checkbox" /> Tiles (52)</label>
+            <label class="filter-opt"><input type="checkbox" /> Wood (31)</label>
+            <label class="filter-opt"><input type="checkbox" /> Plumbing (27)</label>
+            <label class="filter-opt"><input type="checkbox" /> Electrical (19)</label>
+            <label class="filter-opt"><input type="checkbox" /> Hardware (44)</label>
+          </div>
+        </aside>
+
+        <div>
+          <div class="shop-toolbar">
+            <span class="count">Showing 8 of 235 products</span>
+            <div class="sort">
+              <label for="sort-select">Sort by</label>
+              <select id="sort-select" class="select">
+                <option>Popularity</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Rating</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-4">
+
+            <article class="material-card">
+              <div class="img"><div class="swatch" style="background:#E5E7EB;color:#374151">OPC 53 Grade</div></div>
+              <div class="body">
+                <span class="cat">Cement</span>
+                <h3>OPC 53 Grade Cement</h3>
+                <div class="price">₹410 <span class="unit">/ 50kg bag</span></div>
+                <div class="compare-row">
+                  <label class="checkbox-row" style="font-size:0.8rem"><input class="compare-cb" type="checkbox" data-item='{"name":"OPC 53 Grade","category":"Cement","price":"410 / bag","rating":"4.7 ★"}'> Compare</label>
+                  <button class="btn btn-primary btn-sm" data-toast="Added to your material list!">Add to list</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="material-card">
+              <div class="img"><div class="swatch" style="background:#F3F4F6;color:#374151">PPC Fly-Ash</div></div>
+              <div class="body">
+                <span class="cat">Cement</span>
+                <h3>PPC Fly-Ash Cement</h3>
+                <div class="price">₹380 <span class="unit">/ 50kg bag</span></div>
+                <div class="compare-row">
+                  <label class="checkbox-row" style="font-size:0.8rem"><input class="compare-cb" type="checkbox" data-item='{"name":"PPC Fly-Ash","category":"Cement","price":"380 / bag","rating":"4.6 ★"}'> Compare</label>
+                  <button class="btn btn-primary btn-sm" data-toast="Added to your material list!">Add to list</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="material-card">
+              <div class="img"><div class="swatch" style="background:#FFEDD5;color:#374151">Silk-Glow</div></div>
+              <div class="body">
+                <span class="cat">Paints</span>
+                <h3>Silk-Glow Interior Emulsion</h3>
+                <div class="price">₹2,450 <span class="unit">/ 4L</span></div>
+                <div class="compare-row">
+                  <label class="checkbox-row" style="font-size:0.8rem"><input class="compare-cb" type="checkbox" data-item='{"name":"Silk-Glow Emulsion","category":"Paints","price":"2,450 / 4L","rating":"4.8 ★"}'> Compare</label>
+                  <button class="btn btn-primary btn-sm" data-toast="Added to your material list!">Add to list</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="material-card">
+              <div class="img"><div class="swatch" style="background:#FED7AA;color:#374151">WeatherShield</div></div>
+              <div class="body">
+                <span class="cat">Paints</span>
+                <h3>WeatherShield Exterior Paint</h3>
+                <div class="price">₹3,190 <span class="unit">/ 4L</span></div>
+                <div class="compare-row">
+                  <label class="checkbox-row" style="font-size:0.8rem"><input class="compare-cb" type="checkbox" data-item='{"name":"WeatherShield","category":"Paints","price":"3,190 / 4L","rating":"4.5 ★"}'> Compare</label>
+                  <button class="btn btn-primary btn-sm" data-toast="Added to your material list!">Add to list</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="material-card">
+              <div class="img"><div class="swatch" style="background:#D1D5DB;color:#374151">Vitrified 600×600</div></div>
+              <div class="body">
+                <span class="cat">Tiles</span>
+                <h3>Vitrified Floor Tiles 600×600</h3>
+                <div class="price">₹68 <span class="unit">/ sq.ft</span></div>
+                <div class="compare-row">
+                  <label class="checkbox-row" style="font-size:0.8rem"><input class="compare-cb" type="checkbox" data-item='{"name":"Vitrified Tiles 600×600","category":"Tiles","price":"68 / sq.ft","rating":"4.7 ★"}'> Compare</label>
+                  <button class="btn btn-primary btn-sm" data-toast="Added to your material list!">Add to list</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="material-card">
+              <div class="img"><div class="swatch" style="background:#E5E7EB;color:#374151">Anti-Skid</div></div>
+              <div class="body">
+                <span class="cat">Tiles</span>
+                <h3>Anti-Skid Bathroom Tiles</h3>
+                <div class="price">₹52 <span class="unit">/ sq.ft</span></div>
+                <div class="compare-row">
+                  <label class="checkbox-row" style="font-size:0.8rem"><input class="compare-cb" type="checkbox" data-item='{"name":"Anti-Skid Tiles","category":"Tiles","price":"52 / sq.ft","rating":"4.4 ★"}'> Compare</label>
+                  <button class="btn btn-primary btn-sm" data-toast="Added to your material list!">Add to list</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="material-card">
+              <div class="img"><div class="swatch" style="background:#FDBA74;color:#374151">Oak Laminate</div></div>
+              <div class="body">
+                <span class="cat">Wood</span>
+                <h3>Oak Laminate Flooring</h3>
+                <div class="price">₹145 <span class="unit">/ sq.ft</span></div>
+                <div class="compare-row">
+                  <label class="checkbox-row" style="font-size:0.8rem"><input class="compare-cb" type="checkbox" data-item='{"name":"Oak Laminate","category":"Wood","price":"145 / sq.ft","rating":"4.8 ★"}'> Compare</label>
+                  <button class="btn btn-primary btn-sm" data-toast="Added to your material list!">Add to list</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="material-card">
+              <div class="img"><div class="swatch" style="background:#F3F4F6;color:#374151">CPVC Kit</div></div>
+              <div class="body">
+                <span class="cat">Plumbing</span>
+                <h3>CPVC Plumbing Pipe Kit</h3>
+                <div class="price">₹1,240 <span class="unit">/ kit</span></div>
+                <div class="compare-row">
+                  <label class="checkbox-row" style="font-size:0.8rem"><input class="compare-cb" type="checkbox" data-item='{"name":"CPVC Pipe Kit","category":"Plumbing","price":"1,240 / kit","rating":"4.6 ★"}'> Compare</label>
+                  <button class="btn btn-primary btn-sm" data-toast="Added to your material list!">Add to list</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= COMPARE ================= -->
+    <section class="section section--grey">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Compare</span>
+          <h2>Side-by-side comparison</h2>
+          <p>Tick Compare on the cards above and your table appears here.</p>
+        </div>
+        <div id="compare-wrap" style="display:none"><div class="compare-table-wrap"><div class="compare-table-inner"></div></div></div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Need help choosing materials?</h2>
+          <p>The Smart Advisor recommends the best brands for your budget and climate.</p>
+          <a href="smart-advisor.html" class="btn btn-white btn-lg">Ask the Smart Advisor</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+              <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span class="wordmark">Ren<span>ova</span></span>
+          </a>
+          <p>Renovate smarter. Build better. Renova connects homeowners with verified contractors, honest estimates and smart AI guidance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Renova on Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V8c0-1.1.9-2 2-2h2V2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4z"/></svg></a>
+            <a href="#" aria-label="Renova on Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Renova on X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.6 3.9H5.7L17.8 20z"/></svg></a>
+            <a href="#" aria-label="Renova on YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 4 12 4 12 4s-4.6 0-7.8.2c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S1 9.4 1 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.4.2 7.4.2s4.6 0 7.8-.3c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.7v-1.4c0-1.9-.2-3.8-.2-3.8zM9.9 15.1V8.4l6.2 3.4-6.2 3.3z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="find-contractors.html">Find Contractors</a></li>
+            <li><a href="cost-estimator.html">Cost Estimator</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="smart-advisor.html">Smart Advisor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>Renovation tips, weekly</h4>
+          <p>Get budget hacks and design ideas in your inbox. No spam, ever.</p>
+          <form data-news>
+            <input type="email" placeholder="you@example.com" aria-label="Email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Renova. Built for college project.</span>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Contractors — Renova</title>
+  <meta name="description" content="Browse 2,400+ background-verified contractors on Renova. Filter by trade, rating, budget and availability, then book in minutes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Renova — home">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+          <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="wordmark">Ren<span>ova</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="find-contractors.html" class="active">Find Contractors</a>
+        <a href="cost-estimator.html">Cost Estimator</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="materials.html">Materials</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="smart-advisor.html">Smart Advisor</a>
+        <a href="login.html" class="show-mobile">Login</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline btn-sm login-btn">Login</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ================= PAGE HEADER + SEARCH ================= -->
+    <section class="page-header">
+      <div class="container" style="padding-bottom: 48px;">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span class="sep">/</span> Find Contractors
+        </nav>
+        <h1>Find Contractors</h1>
+        <p>Browse 2,400+ background-verified professionals. Filter by trade, rating, budget and availability — then book in minutes.</p>
+      </div>
+      <div class="container">
+        <form class="search-bar" onsubmit="event.preventDefault(); window.renovaToast && window.renovaToast('Searching contractors near you...')">
+          <div class="field">
+            <label for="search-location">Location</label>
+            <input class="input" type="text" id="search-location" placeholder="e.g. Pune, MH" aria-label="Location" />
+          </div>
+          <div class="field">
+            <label for="search-trade">Trade</label>
+            <select id="search-trade" aria-label="Trade">
+              <option value="all" selected>All Trades</option>
+              <option value="plumber">Plumber</option>
+              <option value="electrician">Electrician</option>
+              <option value="carpenter">Carpenter</option>
+              <option value="painter">Painter</option>
+              <option value="mason">Mason</option>
+              <option value="interior-designer">Interior Designer</option>
+              <option value="welder">Welder</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= CONTRACTOR LISTING ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="shop-layout">
+
+          <!-- Filters -->
+          <aside class="filters" aria-label="Contractor filters">
+            <h3>Filters</h3>
+
+            <div class="filter-group">
+              <h4>Trade</h4>
+              <label class="filter-opt"><input type="checkbox" name="trade" value="plumber" /> Plumber</label>
+              <label class="filter-opt"><input type="checkbox" name="trade" value="electrician" /> Electrician</label>
+              <label class="filter-opt"><input type="checkbox" name="trade" value="carpenter" /> Carpenter</label>
+              <label class="filter-opt"><input type="checkbox" name="trade" value="painter" /> Painter</label>
+              <label class="filter-opt"><input type="checkbox" name="trade" value="mason" /> Mason</label>
+              <label class="filter-opt"><input type="checkbox" name="trade" value="interior-designer" /> Interior Designer</label>
+              <label class="filter-opt"><input type="checkbox" name="trade" value="welder" /> Welder</label>
+            </div>
+
+            <div class="filter-group">
+              <h4>Rating</h4>
+              <label class="filter-opt"><input type="radio" name="rating" value="any" checked /> Any rating</label>
+              <label class="filter-opt"><input type="radio" name="rating" value="4" /> 4.0+ stars</label>
+              <label class="filter-opt"><input type="radio" name="rating" value="4.5" /> 4.5+ stars</label>
+            </div>
+
+            <div class="filter-group">
+              <h4>Price range</h4>
+              <label class="filter-opt"><input type="radio" name="price" value="any" checked /> Any</label>
+              <label class="filter-opt"><input type="radio" name="price" value="budget" /> ₹ Budget</label>
+              <label class="filter-opt"><input type="radio" name="price" value="mid" /> ₹₹ Mid</label>
+              <label class="filter-opt"><input type="radio" name="price" value="premium" /> ₹₹₹ Premium</label>
+            </div>
+
+            <div class="filter-group">
+              <h4>Availability</h4>
+              <label class="filter-opt"><input type="checkbox" name="availability" value="this-week" /> Available this week</label>
+              <label class="filter-opt"><input type="checkbox" name="availability" value="site-visit" /> Offers site visit</label>
+            </div>
+
+            <div class="filter-group">
+              <h4>Verified only</h4>
+              <label class="filter-opt"><input type="checkbox" name="verified" value="yes" /> Show verified pros only</label>
+            </div>
+          </aside>
+
+          <!-- Results -->
+          <div class="results-col">
+            <div class="shop-toolbar">
+              <span class="count">Showing 6 of 2,438 contractors</span>
+              <label class="sort">Sort by:
+                <select class="select" aria-label="Sort contractors by">
+                  <option selected>Top Rated</option>
+                  <option>Nearest</option>
+                  <option>Most Reviewed</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="contractor-grid">
+
+              <article class="contractor-card">
+                <div class="photo">
+                  <div class="avatar-circle">RK</div>
+                  <span class="verified-pill">✓ Verified</span>
+                </div>
+                <div class="body">
+                  <span class="trade-badge">Electrician</span>
+                  <h3>Rajesh Kumar</h3>
+                  <div class="rating"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 (212 reviews)</div>
+                  <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Baner, Pune</div>
+                  <div class="actions">
+                    <a href="#" class="btn btn-outline btn-sm" data-toast="Profile coming soon!">View Profile</a>
+                    <a href="#" class="btn btn-primary btn-sm" data-toast="Booking request sent!">Book Now</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="contractor-card">
+                <div class="photo">
+                  <div class="avatar-circle">SP</div>
+                  <span class="verified-pill">✓ Verified</span>
+                </div>
+                <div class="body">
+                  <span class="trade-badge">Interior Designer</span>
+                  <h3>Sunita Patil</h3>
+                  <div class="rating"><span class="stars" aria-label="Rated 4.8 out of 5">★★★★★</span> 4.8 (96 reviews)</div>
+                  <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Koregaon Park, Pune</div>
+                  <div class="actions">
+                    <a href="#" class="btn btn-outline btn-sm" data-toast="Profile coming soon!">View Profile</a>
+                    <a href="#" class="btn btn-primary btn-sm" data-toast="Booking request sent!">Book Now</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="contractor-card">
+                <div class="photo">
+                  <div class="avatar-circle">IS</div>
+                </div>
+                <div class="body">
+                  <span class="trade-badge">Plumber</span>
+                  <h3>Imran Shaikh</h3>
+                  <div class="rating"><span class="stars" aria-label="Rated 4.7 out of 5">★★★★★</span> 4.7 (154 reviews)</div>
+                  <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Wakad, Pune</div>
+                  <div class="actions">
+                    <a href="#" class="btn btn-outline btn-sm" data-toast="Profile coming soon!">View Profile</a>
+                    <a href="#" class="btn btn-primary btn-sm" data-toast="Booking request sent!">Book Now</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="contractor-card">
+                <div class="photo">
+                  <div class="avatar-circle">VS</div>
+                  <span class="verified-pill">✓ Verified</span>
+                </div>
+                <div class="body">
+                  <span class="trade-badge">Carpenter</span>
+                  <h3>Vikram Singh</h3>
+                  <div class="rating"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 (301 reviews)</div>
+                  <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Whitefield, Bengaluru</div>
+                  <div class="actions">
+                    <a href="#" class="btn btn-outline btn-sm" data-toast="Profile coming soon!">View Profile</a>
+                    <a href="#" class="btn btn-primary btn-sm" data-toast="Booking request sent!">Book Now</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="contractor-card">
+                <div class="photo">
+                  <div class="avatar-circle">MI</div>
+                </div>
+                <div class="body">
+                  <span class="trade-badge">Painter</span>
+                  <h3>Meera Iyer</h3>
+                  <div class="rating"><span class="stars" aria-label="Rated 4.6 out of 5">★★★★★</span> 4.6 (88 reviews)</div>
+                  <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Indiranagar, Bengaluru</div>
+                  <div class="actions">
+                    <a href="#" class="btn btn-outline btn-sm" data-toast="Profile coming soon!">View Profile</a>
+                    <a href="#" class="btn btn-primary btn-sm" data-toast="Booking request sent!">Book Now</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="contractor-card">
+                <div class="photo">
+                  <div class="avatar-circle">AN</div>
+                  <span class="verified-pill">✓ Verified</span>
+                </div>
+                <div class="body">
+                  <span class="trade-badge">Mason</span>
+                  <h3>Arjun Nair</h3>
+                  <div class="rating"><span class="stars" aria-label="Rated 4.5 out of 5">★★★★★</span> 4.5 (67 reviews)</div>
+                  <div class="loc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Andheri West, Mumbai</div>
+                  <div class="actions">
+                    <a href="#" class="btn btn-outline btn-sm" data-toast="Profile coming soon!">View Profile</a>
+                    <a href="#" class="btn btn-primary btn-sm" data-toast="Booking request sent!">Book Now</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section section--grey">
+      <div class="container">
+        <div class="section-head">
+          <h2>Can't find the right pro?</h2>
+          <p>Tell the Smart Advisor your budget, city and timeline — it will shortlist matching verified contractors and answer your renovation questions instantly.</p>
+          <a href="smart-advisor.html" class="btn btn-primary btn-lg">Ask the Smart Advisor</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+              <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span class="wordmark">Ren<span>ova</span></span>
+          </a>
+          <p>Renovate smarter. Build better. Renova connects homeowners with verified contractors, honest estimates and smart AI guidance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Renova on Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V8c0-1.1.9-2 2-2h2V2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4z"/></svg></a>
+            <a href="#" aria-label="Renova on Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Renova on X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.6 3.9H5.7L17.8 20z"/></svg></a>
+            <a href="#" aria-label="Renova on YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 4 12 4 12 4s-4.6 0-7.8.2c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S1 9.4 1 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.4.2 7.4.2s4.6 0 7.8-.3c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.7v-1.4c0-1.9-.2-3.8-.2-3.8zM9.9 15.1V8.4l6.2 3.4-6.2 3.3z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="find-contractors.html">Find Contractors</a></li>
+            <li><a href="cost-estimator.html">Cost Estimator</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="smart-advisor.html">Smart Advisor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>Renovation tips, weekly</h4>
+          <p>Get budget hacks and design ideas in your inbox. No spam, ever.</p>
+          <form data-news>
+            <input type="email" placeholder="you@example.com" aria-label="Email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Renova. Built for college project.</span>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

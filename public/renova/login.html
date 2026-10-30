@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in — Renova</title>
+  <meta name="description" content="Renova connects homeowners with verified contractors, estimates renovation costs, and guides every project with smart AI advice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Renova — home">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+          <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="wordmark">Ren<span>ova</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="find-contractors.html">Find Contractors</a>
+        <a href="cost-estimator.html">Cost Estimator</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="materials.html">Materials</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="smart-advisor.html">Smart Advisor</a>
+        <a href="login.html" class="show-mobile active">Login</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline btn-sm login-btn">Login</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ================= LOGIN ================= -->
+    <div class="login-wrap">
+
+      <section class="login-brand" aria-label="Renova brand">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#FFFFFF"/>
+          <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#F97316" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M32 19.5V26h-6.5" stroke="#F97316" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <h2>Welcome back to Renova</h2>
+        <p>Sign in to track projects, chat with contractors and access your saved mood boards.</p>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Track every project milestone in one dashboard</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Chat directly with your booked contractors</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Sync your mood board across devices</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="login-form-side">
+        <div class="login-form">
+          <h2>Sign in</h2>
+          <p class="sub">Enter your details to continue</p>
+
+          <form id="login-form" novalidate>
+            <div class="form-field">
+              <label class="field-label" for="email">Email address</label>
+              <input class="input" type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+              <div id="email-err" class="error-msg">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-field">
+              <div class="row">
+                <label class="field-label" for="password" style="margin-bottom:0">Password</label>
+                <a href="#">Forgot password?</a>
+              </div>
+              <input class="input" type="password" id="password" placeholder="••••••••" autocomplete="current-password" />
+              <div id="pass-err" class="error-msg">Password cannot be empty.</div>
+            </div>
+
+            <div class="form-field">
+              <label class="checkbox-row"><input type="checkbox" /> Remember me for 30 days</label>
+            </div>
+
+            <button class="btn btn-primary btn-block btn-lg" type="submit">Sign In</button>
+          </form>
+
+          <div class="divider">or</div>
+
+          <a href="index.html" class="btn btn-outline btn-block">Continue as Guest</a>
+
+          <p class="login-foot">Don't have an account? <a href="#" data-toast="Sign-up flow coming soon!">Sign up</a></p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ================= LEGAL STRIP ================= -->
+    <section class="section section--grey" style="padding:40px 0">
+      <div class="container text-center">
+        <p style="color:var(--grey-500);font-size:0.9rem">By signing in you agree to Renova's <a href="#" style="color:var(--orange-dark);font-weight:600">Terms</a> and <a href="#" style="color:var(--orange-dark);font-weight:600">Privacy Policy</a>.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+              <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span class="wordmark">Ren<span>ova</span></span>
+          </a>
+          <p>Renovate smarter. Build better. Renova connects homeowners with verified contractors, honest estimates and smart AI guidance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Renova on Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V8c0-1.1.9-2 2-2h2V2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4z"/></svg></a>
+            <a href="#" aria-label="Renova on Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Renova on X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.6 3.9H5.7L17.8 20z"/></svg></a>
+            <a href="#" aria-label="Renova on YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 4 12 4 12 4s-4.6 0-7.8.2c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S1 9.4 1 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.4.2 7.4.2s4.6 0 7.8-.3c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.7v-1.4c0-1.9-.2-3.8-.2-3.8zM9.9 15.1V8.4l6.2 3.4-6.2 3.3z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="find-contractors.html">Find Contractors</a></li>
+            <li><a href="cost-estimator.html">Cost Estimator</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="smart-advisor.html">Smart Advisor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>Renovation tips, weekly</h4>
+          <p>Get budget hacks and design ideas in your inbox. No spam, ever.</p>
+          <form data-news>
+            <input type="email" placeholder="you@example.com" aria-label="Email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Renova. Built for college project.</span>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renova — Renovate smarter. Build better.</title>
+  <meta name="description" content="Renova connects homeowners with verified contractors, estimates renovation costs, and guides every project with smart AI advice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Renova — home">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+          <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="wordmark">Ren<span>ova</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html" class="active">Home</a>
+        <a href="find-contractors.html">Find Contractors</a>
+        <a href="cost-estimator.html">Cost Estimator</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="materials.html">Materials</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="smart-advisor.html">Smart Advisor</a>
+        <a href="login.html" class="show-mobile">Login</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline btn-sm login-btn">Login</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Renovate smarter.<br />Build <span>better</span>.</h1>
+          <p class="lead">Renova connects you with verified contractors, gives instant cost estimates, and guides every step of your home renovation with smart AI advice.</p>
+          <div class="hero-cta">
+            <a href="find-contractors.html" class="btn btn-primary btn-lg">Find Contractors
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="cost-estimator.html" class="btn btn-outline btn-lg">Estimate Cost</a>
+          </div>
+          <div class="hero-trust">
+            <div class="avatars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <span>Trusted by <strong>18,000+</strong> homeowners across India</span>
+          </div>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Illustration of a freshly renovated home with a refresh symbol">
+          <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- background -->
+            <rect width="480" height="360" fill="#FFEDD5"/>
+            <circle cx="392" cy="72" r="46" fill="#FDBA74" opacity="0.5"/>
+            <circle cx="64" cy="300" r="60" fill="#FDBA74" opacity="0.35"/>
+            <!-- ground -->
+            <rect y="290" width="480" height="70" fill="#F3F4F6"/>
+            <!-- house body -->
+            <rect x="120" y="160" width="240" height="130" rx="6" fill="#FFFFFF"/>
+            <path d="M100 170L240 70l140 100v10H100v-10z" fill="#F97316"/>
+            <path d="M100 170L240 70l140 100v10H100v-10z" fill="url(#roofshade)"/>
+            <defs>
+              <linearGradient id="roofshade" x1="100" y1="70" x2="380" y2="180">
+                <stop stop-color="#F97316"/><stop offset="1" stop-color="#EA580C"/>
+              </linearGradient>
+            </defs>
+            <!-- chimney -->
+            <rect x="330" y="90" width="26" height="52" rx="3" fill="#374151"/>
+            <!-- door -->
+            <rect x="220" y="212" width="56" height="78" rx="4" fill="#374151"/>
+            <circle cx="264" cy="252" r="3.5" fill="#F97316"/>
+            <!-- windows -->
+            <rect x="140" y="196" width="52" height="52" rx="4" fill="#FFEDD5" stroke="#D1D5DB" stroke-width="3"/>
+            <path d="M166 196v52M140 222h52" stroke="#D1D5DB" stroke-width="3"/>
+            <rect x="294" y="196" width="52" height="52" rx="4" fill="#FFEDD5" stroke="#D1D5DB" stroke-width="3"/>
+            <path d="M320 196v52M294 222h52" stroke="#D1D5DB" stroke-width="3"/>
+            <!-- refresh spark above house -->
+            <g transform="translate(240 34)">
+              <path d="M16 2a14 14 0 1 0 10 24" stroke="#F97316" stroke-width="4" stroke-linecap="round" fill="none"/>
+              <path d="M28 14v12H16" stroke="#F97316" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </g>
+            <!-- plants -->
+            <g>
+              <rect x="96" y="262" width="18" height="28" rx="3" fill="#F97316"/>
+              <path d="M105 262c0-14-10-18-10-30 0 6 10 10 10 30zm0 0c0-14 10-18 10-30 0 6-10 10-10 30z" fill="#374151"/>
+            </g>
+            <g>
+              <rect x="372" y="262" width="18" height="28" rx="3" fill="#F97316"/>
+              <path d="M381 262c0-14-10-18-10-30 0 6 10 10 10 30zm0 0c0-14 10-18 10-30 0 6-10 10-10 30z" fill="#374151"/>
+            </g>
+            <!-- steps -->
+            <rect x="212" y="290" width="72" height="8" rx="2" fill="#D1D5DB"/>
+          </svg>
+          <div class="hero-badge"><span class="dot" aria-hidden="true"></span> 2,400+ pros online now</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="stats-bar" aria-label="Platform statistics">
+      <div class="container stats-grid">
+        <div class="stat"><div class="num">2,400+</div><div class="label">Verified Contractors</div></div>
+        <div class="stat"><div class="num">18k</div><div class="label">Projects Completed</div></div>
+        <div class="stat"><div class="num">4.9</div><div class="label">Average Rating</div></div>
+        <div class="stat"><div class="num">30%</div><div class="label">Average Savings</div></div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What we offer</span>
+          <h2>Everything your renovation needs, in one place</h2>
+          <p>From the first idea to the final coat of paint — Renova is with you at every step.</p>
+        </div>
+        <div class="grid grid-3">
+
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg></div>
+            <h3>Find Contractors</h3>
+            <p>Browse 2,400+ background-verified professionals — plumbers, electricians, carpenters and more — filtered by rating, price and availability.</p>
+            <a href="find-contractors.html" class="link-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h3>Cost Estimator</h3>
+            <p>Get a transparent, room-by-room budget in seconds. Our calculator uses live material rates and local labour costs — no hidden surprises.</p>
+            <a href="cost-estimator.html" class="link-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <h3>Inspiration</h3>
+            <p>Explore real renovation transformations — kitchens, baths, living rooms and more. Save ideas to your mood board and share with your contractor.</p>
+            <a href="inspiration.html" class="link-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+            <h3>Materials</h3>
+            <p>Compare cement, tiles, paints and hardware at honest market prices. Build your material list and get it delivered to your site.</p>
+            <a href="materials.html" class="link-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg></div>
+            <h3>How It Works</h3>
+            <p>Four simple steps take you from idea to move-in ready. See exactly how matching, estimates and milestone payments keep you in control.</p>
+            <a href="how-it-works.html" class="link-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a5 5 0 0 1 5 5c0 2-1 3-2 4v2h-6v-2c-1-1-2-2-2-4a5 5 0 0 1 5-5z"/><path d="M9 18h6M10 21h4"/></svg></div>
+            <h3>Smart Advisor</h3>
+            <p>Your 24/7 renovation assistant. Ask anything — budgets, materials, timelines — and get instant, data-backed guidance in plain language.</p>
+            <a href="smart-advisor.html" class="link-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="section section--grey">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why Renova</span>
+          <h2>Built on trust, priced with honesty</h2>
+          <p>Renovation has a reputation for stress. We're changing that with verification, transparency and smart guidance.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="feature-col">
+            <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Verified Professionals</h3>
+            <p>Every contractor passes ID verification, trade-skill checks and a 3-project review audit before appearing on Renova.</p>
+          </div>
+          <div class="feature-col">
+            <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+            <h3>Transparent Pricing</h3>
+            <p>Live material rates and standard labour costs mean the estimate you see is the bill you pay. Milestone payments protect your money.</p>
+          </div>
+          <div class="feature-col">
+            <div class="feature-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg></div>
+            <h3>Smart AI Guidance</h3>
+            <p>The Renova Smart Advisor answers budget, material and design questions instantly — like having an architect in your pocket.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Testimonials</span>
+          <h2>Homeowners who renovated smarter</h2>
+        </div>
+        <div class="testimonials">
+          <article class="testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"The cost estimator was spot-on — our final kitchen bill came within 4% of the Renova estimate. Booking a verified carpenter took ten minutes."</blockquote>
+            <div class="author">
+              <div class="ava">PK</div>
+              <div class="who"><strong>Priya Kulkarni</strong><span>Kitchen renovation, Pune</span></div>
+            </div>
+          </article>
+          <article class="testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"I compared three painters side by side, saw real ratings and hired the same day. The Smart Advisor even suggested a better paint brand for my budget."</blockquote>
+            <div class="author">
+              <div class="ava">RS</div>
+              <div class="who"><strong>Rahul Sharma</strong><span>Full-home repaint, Delhi</span></div>
+            </div>
+          </article>
+          <article class="testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Milestone payments changed everything. I only released money after each stage passed inspection. Zero stress, zero surprises."</blockquote>
+            <div class="author">
+              <div class="ava">AM</div>
+              <div class="who"><strong>Anita Menon</strong><span>Bathroom remodel, Bengaluru</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Ready to start your renovation?</h2>
+          <p>Join 18,000+ homeowners who built better with Renova. Your first estimate is free.</p>
+          <a href="cost-estimator.html" class="btn btn-white btn-lg">Get My Free Estimate</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+              <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span class="wordmark">Ren<span>ova</span></span>
+          </a>
+          <p>Renovate smarter. Build better. Renova connects homeowners with verified contractors, honest estimates and smart AI guidance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Renova on Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V8c0-1.1.9-2 2-2h2V2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4z"/></svg></a>
+            <a href="#" aria-label="Renova on Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Renova on X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.6 3.9H5.7L17.8 20z"/></svg></a>
+            <a href="#" aria-label="Renova on YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 4 12 4 12 4s-4.6 0-7.8.2c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S1 9.4 1 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.4.2 7.4.2s4.6 0 7.8-.3c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.7v-1.4c0-1.9-.2-3.8-.2-3.8zM9.9 15.1V8.4l6.2 3.4-6.2 3.3z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="find-contractors.html">Find Contractors</a></li>
+            <li><a href="cost-estimator.html">Cost Estimator</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="smart-advisor.html">Smart Advisor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>Renovation tips, weekly</h4>
+          <p>Get budget hacks and design ideas in your inbox. No spam, ever.</p>
+          <form data-news>
+            <input type="email" placeholder="you@example.com" aria-label="Email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Renova. Built for college project.</span>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

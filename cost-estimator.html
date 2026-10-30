@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renova — Renovation Cost Estimator</title>
+  <meta name="description" content="Renova connects homeowners with verified contractors, estimates renovation costs, and guides every project with smart AI advice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Renova — home">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+          <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="wordmark">Ren<span>ova</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="find-contractors.html">Find Contractors</a>
+        <a href="cost-estimator.html" class="active">Cost Estimator</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="materials.html">Materials</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="smart-advisor.html">Smart Advisor</a>
+        <a href="login.html" class="show-mobile">Login</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline btn-sm login-btn">Login</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="sep">/</span>Cost Estimator
+        </nav>
+        <h1>Renovation Cost Estimator</h1>
+        <p>Get an instant, transparent budget for your project. Live material rates × your room size — no hidden surprises.</p>
+      </div>
+    </section>
+
+    <!-- ================= ESTIMATOR ================= -->
+    <section class="section">
+      <div class="container estimator-layout">
+
+        <form class="estimator-form" id="estimator-form" onsubmit="return false;">
+          <div class="form-row">
+            <label for="room-type">Room type</label>
+            <select class="select" id="room-type">
+              <option value="kitchen">Kitchen</option>
+              <option value="bathroom">Bathroom</option>
+              <option value="bedroom">Bedroom</option>
+              <option value="living-room">Living Room</option>
+              <option value="full-home">Full Home</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="area">Area (sq.ft)</label>
+            <input class="input" type="number" id="area" min="20" max="5000" value="200" />
+          </div>
+
+          <div class="form-row">
+            <label>Material quality</label>
+            <div class="radio-group">
+              <label class="radio-card"><input type="radio" name="quality" value="standard" checked /> Standard</label>
+              <label class="radio-card"><input type="radio" name="quality" value="premium" /> Premium</label>
+              <label class="radio-card"><input type="radio" name="quality" value="luxury" /> Luxury</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label>Work included</label>
+            <div class="check-group">
+              <label class="check-card"><input type="checkbox" name="work" value="flooring" checked /> Flooring</label>
+              <label class="check-card"><input type="checkbox" name="work" value="painting" checked /> Painting</label>
+              <label class="check-card"><input type="checkbox" name="work" value="plumbing" /> Plumbing</label>
+              <label class="check-card"><input type="checkbox" name="work" value="electrical" /> Electrical</label>
+              <label class="check-card"><input type="checkbox" name="work" value="carpentry" /> Carpentry</label>
+            </div>
+          </div>
+        </form>
+
+        <aside class="result-card">
+          <h3>Estimated Range</h3>
+          <p class="range-label">for <span id="live-area">200 sq.ft</span> · updates live</p>
+          <div class="range-num" id="range-num">₹240,000 <span class="small">– ₹282,000</span></div>
+          <div class="breakdown">
+            <h4>Cost breakdown</h4>
+            <div id="breakdown-chart"><!-- bars injected by script.js --></div>
+          </div>
+          <p class="range-label"><small>Estimates include material + labour at Indore market rates.</small></p>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ================= HOW WE CALCULATE ================= -->
+    <section class="section section--grey">
+      <div class="container" style="max-width:760px">
+        <details class="collapsible">
+          <summary>How we calculate
+            <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="panel">
+            <p><strong>Estimate = (base rate per sq.ft × area × quality multiplier) + Σ (specific work add-ons × area)</strong></p>
+            <p>Base rates per sq.ft: Kitchen ₹1,200 · Bathroom ₹1,500 · Bedroom ₹800 · Living ₹900 · Full home ₹1,000.</p>
+            <p>Quality multipliers: Standard ×1.0 · Premium ×1.35 · Luxury ×1.8.</p>
+            <p>Work add-ons per sq.ft: Flooring ₹250 · Painting ₹120 · Plumbing ₹180 · Electrical ₹200 · Carpentry ₹220.</p>
+            <p>We show a ±9% range because site conditions vary.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Happy with your estimate?</h2>
+          <p>Get matched with verified contractors who work within your budget.</p>
+          <a href="find-contractors.html" class="btn btn-white btn-lg">Find Contractors</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+              <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span class="wordmark">Ren<span>ova</span></span>
+          </a>
+          <p>Renovate smarter. Build better. Renova connects homeowners with verified contractors, honest estimates and smart AI guidance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Renova on Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V8c0-1.1.9-2 2-2h2V2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4z"/></svg></a>
+            <a href="#" aria-label="Renova on Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Renova on X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.6 3.9H5.7L17.8 20z"/></svg></a>
+            <a href="#" aria-label="Renova on YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 4 12 4 12 4s-4.6 0-7.8.2c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S1 9.4 1 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.4.2 7.4.2s4.6 0 7.8-.3c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.7v-1.4c0-1.9-.2-3.8-.2-3.8zM9.9 15.1V8.4l6.2 3.4-6.2 3.3z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="find-contractors.html">Find Contractors</a></li>
+            <li><a href="cost-estimator.html">Cost Estimator</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="smart-advisor.html">Smart Advisor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>Renovation tips, weekly</h4>
+          <p>Get budget hacks and design ideas in your inbox. No spam, ever.</p>
+          <form data-news>
+            <input type="email" placeholder="you@example.com" aria-label="Email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Renova. Built for college project.</span>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

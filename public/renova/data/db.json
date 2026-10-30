@@ -1,0 +1,246 @@
+{
+  "users": [
+    {
+      "name": "Demo User",
+      "email": "demo@renova.in",
+      "password": "demo123",
+      "createdAt": "2025-01-10T09:00:00.000Z"
+    },
+    {
+      "name": "Priya Kulkarni",
+      "email": "priya@example.com",
+      "password": "priya123",
+      "createdAt": "2025-01-12T14:30:00.000Z"
+    }
+  ],
+  "stats": {
+    "contractors": "2,400+",
+    "projects": "18k",
+    "rating": "4.9",
+    "savings": "30%"
+  },
+  "contractors": [
+    {
+      "id": 1,
+      "name": "Rajesh Kumar",
+      "trade": "Electrician",
+      "rating": 4.9,
+      "reviews": 212,
+      "city": "Pune",
+      "area": "Baner",
+      "verified": true,
+      "priceTier": "mid",
+      "availability": [
+        "week",
+        "visit"
+      ],
+      "experience": "12 years",
+      "about": "Licensed electrician specialising in complete home rewiring, smart-home fittings and safety audits."
+    },
+    {
+      "id": 2,
+      "name": "Sunita Patil",
+      "trade": "Interior Designer",
+      "rating": 4.8,
+      "reviews": 96,
+      "city": "Pune",
+      "area": "Koregaon Park",
+      "verified": true,
+      "priceTier": "premium",
+      "availability": [
+        "week"
+      ],
+      "experience": "9 years",
+      "about": "Modern minimalist interiors with 3D walkthroughs before a single wall is touched."
+    },
+    {
+      "id": 3,
+      "name": "Imran Shaikh",
+      "trade": "Plumber",
+      "rating": 4.7,
+      "reviews": 154,
+      "city": "Pune",
+      "area": "Wakad",
+      "verified": false,
+      "priceTier": "budget",
+      "availability": [
+        "week",
+        "visit"
+      ],
+      "experience": "7 years",
+      "about": "Leak detection, bathroom re-piping and water-tank fitting at honest rates."
+    },
+    {
+      "id": 4,
+      "name": "Vikram Singh",
+      "trade": "Carpenter",
+      "rating": 4.9,
+      "reviews": 301,
+      "city": "Bengaluru",
+      "area": "Whitefield",
+      "verified": true,
+      "priceTier": "premium",
+      "availability": [
+        "week",
+        "visit"
+      ],
+      "experience": "15 years",
+      "about": "Custom modular kitchens, wardrobes and furniture-grade finishing work."
+    },
+    {
+      "id": 5,
+      "name": "Meera Iyer",
+      "trade": "Painter",
+      "rating": 4.6,
+      "reviews": 88,
+      "city": "Bengaluru",
+      "area": "Indiranagar",
+      "verified": false,
+      "priceTier": "mid",
+      "availability": [
+        "visit"
+      ],
+      "experience": "6 years",
+      "about": "Interior and exterior painting with dust-free sanding and branded materials only."
+    },
+    {
+      "id": 6,
+      "name": "Arjun Nair",
+      "trade": "Mason",
+      "rating": 4.5,
+      "reviews": 67,
+      "city": "Mumbai",
+      "area": "Andheri West",
+      "verified": true,
+      "priceTier": "budget",
+      "availability": [
+        "week"
+      ],
+      "experience": "11 years",
+      "about": "Brickwork, plastering, tiling and structural repairs for apartments and bungalows."
+    },
+    {
+      "id": 7,
+      "name": "Deepak Verma",
+      "trade": "Welder",
+      "rating": 4.6,
+      "reviews": 73,
+      "city": "Delhi",
+      "area": "Dwarka",
+      "verified": true,
+      "priceTier": "mid",
+      "availability": [
+        "week",
+        "visit"
+      ],
+      "experience": "10 years",
+      "about": "Security grills, railings, gates and custom steel furniture fabrication."
+    },
+    {
+      "id": 8,
+      "name": "Kavita Joshi",
+      "trade": "Interior Designer",
+      "rating": 4.7,
+      "reviews": 112,
+      "city": "Mumbai",
+      "area": "Thane",
+      "verified": false,
+      "priceTier": "mid",
+      "availability": [
+        "week",
+        "visit"
+      ],
+      "experience": "8 years",
+      "about": "Budget-friendly makeovers for 2BHK and 3BHK flats with vendor-managed execution."
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "name": "OPC 53 Grade Cement",
+      "category": "Cement",
+      "price": "₹410 / 50kg bag",
+      "rating": "4.7 ★",
+      "brand": "UltraTech"
+    },
+    {
+      "id": 2,
+      "name": "PPC Fly-Ash Cement",
+      "category": "Cement",
+      "price": "₹380 / 50kg bag",
+      "rating": "4.6 ★",
+      "brand": "Ambuja"
+    },
+    {
+      "id": 3,
+      "name": "Silk-Glow Interior Emulsion",
+      "category": "Paints",
+      "price": "₹2,450 / 4L",
+      "rating": "4.8 ★",
+      "brand": "Asian Paints"
+    },
+    {
+      "id": 4,
+      "name": "WeatherShield Exterior Paint",
+      "category": "Paints",
+      "price": "₹3,190 / 4L",
+      "rating": "4.5 ★",
+      "brand": "Berger"
+    },
+    {
+      "id": 5,
+      "name": "Vitrified Floor Tiles 600×600",
+      "category": "Tiles",
+      "price": "₹68 / sq.ft",
+      "rating": "4.7 ★",
+      "brand": "Kajaria"
+    },
+    {
+      "id": 6,
+      "name": "Anti-Skid Bathroom Tiles",
+      "category": "Tiles",
+      "price": "₹52 / sq.ft",
+      "rating": "4.4 ★",
+      "brand": "Somany"
+    },
+    {
+      "id": 7,
+      "name": "Oak Laminate Flooring",
+      "category": "Wood",
+      "price": "₹145 / sq.ft",
+      "rating": "4.8 ★",
+      "brand": "Greenply"
+    },
+    {
+      "id": 8,
+      "name": "CPVC Plumbing Pipe Kit",
+      "category": "Plumbing",
+      "price": "₹1,240 / kit",
+      "rating": "4.6 ★",
+      "brand": "Ashirvad"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Priya Kulkarni",
+      "project": "Kitchen renovation, Pune",
+      "stars": 5,
+      "quote": "The cost estimator was spot-on — our final kitchen bill came within 4% of the Renova estimate. Booking a verified carpenter took ten minutes."
+    },
+    {
+      "name": "Rahul Sharma",
+      "project": "Full-home repaint, Delhi",
+      "stars": 5,
+      "quote": "I compared three painters side by side, saw real ratings and hired the same day. The Smart Advisor even suggested a better paint brand for my budget."
+    },
+    {
+      "name": "Anita Menon",
+      "project": "Bathroom remodel, Bengaluru",
+      "stars": 5,
+      "quote": "Milestone payments changed everything. I only released money after each stage passed inspection. Zero stress, zero surprises."
+    }
+  ],
+  "estimates": [],
+  "subscribers": [],
+  "chats": []
+}

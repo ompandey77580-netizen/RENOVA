@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renova — Renovation Inspiration</title>
+  <meta name="description" content="Explore real home renovation transformations. Save ideas to your mood board and share them with your contractor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="site">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Renova — home">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+          <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="wordmark">Ren<span>ova</span></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="find-contractors.html">Find Contractors</a>
+        <a href="cost-estimator.html">Cost Estimator</a>
+        <a href="inspiration.html" class="active">Inspiration</a>
+        <a href="materials.html">Materials</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="smart-advisor.html">Smart Advisor</a>
+        <a href="login.html" class="show-mobile">Login</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-outline btn-sm login-btn">Login</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="sep">/</span> Inspiration
+        </nav>
+        <h1>Renovation Inspiration</h1>
+        <p>Real transformations from real homes. Tap the heart to save ideas to your mood board.</p>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="section">
+      <div class="container">
+
+        <div class="filter-tabs" role="tablist">
+          <button data-cat="all" class="active">All</button>
+          <button data-cat="kitchen">Kitchen</button>
+          <button data-cat="bathroom">Bathroom</button>
+          <button data-cat="living-room">Living Room</button>
+          <button data-cat="bedroom">Bedroom</button>
+          <button data-cat="outdoor">Outdoor</button>
+          <button data-cat="office">Office</button>
+        </div>
+
+        <div class="gallery">
+
+          <figure class="gallery-item" data-cat="kitchen">
+            <img src="https://picsum.photos/seed/renova-kitchen1/600/380" alt="Modern kitchen with white cabinets and warm lighting" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Scandi Kitchen Glow</strong><span class="tag">Minimal · ₹2.8L</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="bathroom">
+            <img src="https://picsum.photos/seed/renova-bath1/600/460" alt="Spa-style bathroom with stone basin and wooden accents" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Spa Bathroom Retreat</strong><span class="tag">Contemporary · ₹3.2L</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="living-room">
+            <img src="https://picsum.photos/seed/renova-living1/600/420" alt="Cozy industrial living room with exposed brick and warm lamps" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Cafe-Style Reading Nook</strong><span class="tag">Industrial · ₹90k</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="bedroom">
+            <img src="https://picsum.photos/seed/renova-bed1/600/500" alt="Warm wooden bedroom with soft neutral bedding" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Warm Wood Bedroom</strong><span class="tag">Japandi · ₹1.8L</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="outdoor">
+            <img src="https://picsum.photos/seed/renova-outdoor1/600/400" alt="Courtyard garden with tropical plants and stone pathway" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Monsoon Courtyard Makeover</strong><span class="tag">Tropical · ₹1.4L</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="kitchen">
+            <img src="https://picsum.photos/seed/renova-kitchen2/600/440" alt="Dark modern kitchen with island counter and pendant lights" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Midnight Island Kitchen</strong><span class="tag">Modern · ₹4.1L</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="office">
+            <img src="https://picsum.photos/seed/renova-office1/600/380" alt="Compact home office desk with shelves and daylight" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Focus Corner Office</strong><span class="tag">Scandi · ₹75k</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="bathroom">
+            <img src="https://picsum.photos/seed/renova-bath2/600/520" alt="Bright bathroom with terrazzo tiles and brass fittings" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Terrazzo Bath Revival</strong><span class="tag">Retro · ₹2.1L</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="living-room">
+            <img src="https://picsum.photos/seed/renova-living2/600/420" alt="Open living lounge with layered rugs and curved sofa" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Sunken Lounge Vibes</strong><span class="tag">Contemporary · ₹2.6L</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="bedroom">
+            <img src="https://picsum.photos/seed/renova-bed2/600/460" alt="Pastel bedroom with cane headboard and sheer curtains" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Pastel Dream Bedroom</strong><span class="tag">Bohemian · ₹1.5L</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="outdoor">
+            <img src="https://picsum.photos/seed/renova-outdoor2/600/380" alt="Rooftop deck with string lights and outdoor dining table" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Rooftop Dinner Deck</strong><span class="tag">Minimal · ₹2.9L</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" data-cat="kitchen">
+            <img src="https://picsum.photos/seed/renova-kitchen3/600/480" alt="Farmhouse kitchen with open wooden shelves and herbs" loading="lazy" />
+            <button class="save" aria-label="Save to mood board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></button>
+            <figcaption class="caption"><strong>Open-Shelf Chef Kitchen</strong><span class="tag">Farmhouse · ₹3.4L</span></figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MOOD BOARDS ================= -->
+    <section class="section section--grey">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mood boards</span>
+          <h2>Start your own mood board</h2>
+          <p>Collect favourites, then share one link with your contractor.</p>
+        </div>
+        <div class="grid grid-3">
+
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+            <h3>Save as you scroll</h3>
+            <p>One tap on any image adds it to your private board.</p>
+            <a href="smart-advisor.html" class="link-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg></div>
+            <h3>Share with your pro</h3>
+            <p>Send your board to any contractor so they quote exactly what you love.</p>
+            <a href="find-contractors.html" class="link-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 4.6 4.6 1.9-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9L12 3z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"/></svg></div>
+            <h3>Get AI suggestions</h3>
+            <p>The Smart Advisor recommends similar styles within your budget.</p>
+            <a href="smart-advisor.html" class="link-more">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-banner">
+          <h2>See something you love?</h2>
+          <p>Book a free consultation and bring your mood board to life.</p>
+          <a href="find-contractors.html" class="btn btn-white btn-lg">Find Contractors</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 5L45 21.5V41a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V21.5L24 5z" fill="#F97316"/>
+              <path d="M31.5 25.5a8 8 0 1 0-2.34 5.66" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M32 19.5V26h-6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span class="wordmark">Ren<span>ova</span></span>
+          </a>
+          <p>Renovate smarter. Build better. Renova connects homeowners with verified contractors, honest estimates and smart AI guidance.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Renova on Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V8c0-1.1.9-2 2-2h2V2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4z"/></svg></a>
+            <a href="#" aria-label="Renova on Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Renova on X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.3 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.6 3.9H5.7L17.8 20z"/></svg></a>
+            <a href="#" aria-label="Renova on YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 4 12 4 12 4s-4.6 0-7.8.2c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S1 9.4 1 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.4.2 7.4.2s4.6 0 7.8-.3c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.7v-1.4c0-1.9-.2-3.8-.2-3.8zM9.9 15.1V8.4l6.2 3.4-6.2 3.3z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="find-contractors.html">Find Contractors</a></li>
+            <li><a href="cost-estimator.html">Cost Estimator</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="smart-advisor.html">Smart Advisor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-news">
+          <h4>Renovation tips, weekly</h4>
+          <p>Get budget hacks and design ideas in your inbox. No spam, ever.</p>
+          <form data-news>
+            <input type="email" placeholder="you@example.com" aria-label="Email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Renova. Built for college project.</span>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

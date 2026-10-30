@@ -1,0 +1,16 @@
+{
+  "name": "renova",
+  "version": "1.0.0",
+  "description": "Renova — home renovation platform (college project). Pure HTML/CSS/JS frontend + zero-dependency Node.js backend with a JSON REST API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["renovation", "full-stack", "college-project", "vanilla-js", "node"],
+  "author": "Renova Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  }
+}

@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Renova helps you find trusted renovation contractors, estimate costs and discover materials.">
+  <title>Renova | Smart Contractor Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="#home"><span class="logo-mark">R</span> renova<span class="logo-dot">.</span></a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#contractors">Find Contractors</a>
+    <a href="#estimator">Cost Estimator</a>
+    <a href="#inspiration">Inspiration</a>
+    <a href="#materials">Materials</a>
+    <a href="#how-it-works">How It Works</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a class="advisor-link" href="#advisor">✦ Smart Advisor</a>
+    <a class="btn btn-dark btn-small" href="#login">Login</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+  </div>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section class="hero section" id="home">
+    <div class="hero-content">
+      <span class="eyebrow"><span class="status-dot"></span> YOUR HOME, YOUR VISION</span>
+      <h1>Build your dream home.<br> <span>Without the guesswork.</span></h1>
+      <p class="hero-text">
+        Discover trusted contractors, plan your renovation budget
+        and find inspiration for every corner of your home.
+      </p>
+
+      <form class="search-bar" id="heroSearch">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search"
+          placeholder="What do you want to renovate?">
+        <button class="btn btn-orange" type="submit">Explore →</button>
+      </form>
+
+      <div class="hero-stats">
+        <div><strong>Trusted</strong><span>Contractor discovery</span></div>
+        <div><strong>Smarter</strong><span>Budget planning</span></div>
+        <div><strong>Simpler</strong><span>Renovation journey</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=85"
+          alt="Modern renovated living room">
+        <div class="image-tag"><span>✦</span> Imagine. Plan. Renovate.</div>
+      </div>
+      <div class="floating-card">
+        <span class="float-icon">↗</span>
+        <div><strong>Your next chapter</strong><p>Starts at home.</p></div>
+      </div>
+      <div class="hero-orbit"></div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories section">
+    <div class="section-heading">
+      <div><span class="eyebrow">START WITH AN IDEA</span><h2>What are we transforming?</h2></div>
+      <a class="text-link" href="#inspiration">Explore ideas ↗</a>
+    </div>
+    <div class="category-grid">
+      <a class="category-card" href="#contractors"><span>⌂</span><h3>Full Home</h3><p>From floor to ceiling</p></a>
+      <a class="category-card" href="#contractors"><span>▤</span><h3>Kitchen</h3><p>Made for everyday living</p></a>
+      <a class="category-card" href="#contractors"><span>◈</span><h3>Bathroom</h3><p>Refresh your routine</p></a>
+      <a class="category-card" href="#contractors"><span>▧</span><h3>Living Room</h3><p>Your favourite space</p></a>
+    </div>
+  </section>
+
+  <!-- CONTRACTORS -->
+  <section class="section soft-section" id="contractors">
+    <div class="section-heading">
+      <div><span class="eyebrow">PEOPLE WHO BUILD YOUR VISION</span><h2>Find your renovation partner.</h2><p>Explore example contractor profiles for your next project.</p></div>
+      <span class="section-number">01 / DISCOVER</span>
+    </div>
+
+    <div class="contractor-grid">
+      <article class="contractor-card">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80" alt="Architectural construction project">
+        <div class="card-body">
+          <span class="pill">RESIDENTIAL</span>
+          <h3>Gillani Contractors</h3>
+          <p>Home renovation · Interior work</p>
+          <div class="card-bottom"><span class="rating">★ 4.8 <small>Sample rating</small></span><a href="#login" class="text-link">View details ↗</a></div>
+        </div>
+      </article>
+      <article class="contractor-card">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=80" alt="Contemporary residential interior">
+        <div class="card-body">
+          <span class="pill">INTERIORS</span>
+          <h3>Bravo Contractors</h3>
+          <p>Modern interiors · Remodeling</p>
+          <div class="card-bottom"><span class="rating">★ 4.7 <small>Sample rating</small></span><a href="#login" class="text-link">View details ↗</a></div>
+        </div>
+      </article>
+      <article class="contractor-card contractor-placeholder">
+        <div class="placeholder-icon">+</div>
+        <h3>Your next contractor</h3>
+        <p>Discover and compare service providers for your project.</p>
+        <a href="#advisor" class="btn btn-outline">Get recommendations</a>
+      </article>
+    </div>
+    <p class="disclaimer">Contractor details and ratings shown here are illustrative demo content, not verified listings.</p>
+  </section>
+
+  <!-- ESTIMATOR -->
+  <section class="section estimator-section" id="estimator">
+    <div class="estimator-intro">
+      <span class="eyebrow">PLAN BEFORE YOU BUILD</span>
+      <h2>A clearer budget.<br><span>Fewer surprises.</span></h2>
+      <p>Estimate your renovation costs based on your space, project type and finish level. Use this as a starting point, not a contractor quote.</p>
+      <div class="estimator-note">✦ Estimates are indicative and can vary by location, labour and material quality.</div>
+    </div>
+
+    <div class="estimator-card">
+      <h3>Renovation cost estimator</h3>
+      <p class="muted">Tell us a little about your project.</p>
+      <form id="estimateForm">
+        <label for="projectType">Renovation type</label>
+        <select id="projectType">
+          <option value="full">Full home renovation</option>
+          <option value="kitchen">Kitchen renovation</option>
+          <option value="bathroom">Bathroom renovation</option>
+          <option value="living">Living room renovation</option>
+        </select>
+
+        <label for="area">Area (square feet)</label>
+        <input id="area" type="number" min="50" max="10000" value="500" required>
+
+        <label for="finish">Finish level</label>
+        <select id="finish">
+          <option value="1200">Basic — ₹1,200 / sq. ft.</option>
+          <option value="1800" selected>Standard — ₹1,800 / sq. ft.</option>
+          <option value="2800">Premium — ₹2,800 / sq. ft.</option>
+        </select>
+
+        <button class="btn btn-orange btn-full" type="submit">Calculate estimate →</button>
+      </form>
+      <div class="estimate-result" aria-live="polite">
+        <span>YOUR INDICATIVE BUDGET</span>
+        <h2 id="estimateAmount">₹9,00,000</h2>
+        <p id="estimateDetails">Based on 500 sq. ft. at ₹1,800 per sq. ft.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSPIRATION -->
+  <section class="section" id="inspiration">
+    <div class="section-heading">
+      <div><span class="eyebrow">IDEAS THAT FEEL LIKE YOU</span><h2>Find your kind of beautiful.</h2><p>Explore different looks before choosing your design.</p></div>
+    </div>
+    <div class="inspiration-grid">
+      <article class="inspiration-card inspiration-large">
+        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1000&q=80" alt="Warm minimalist home interior">
+        <div class="inspiration-overlay"><span>01 — CALM & SIMPLE</span><h3>Modern Minimalist</h3></div>
+      </article>
+      <article class="inspiration-card">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Elegant contemporary living space">
+        <div class="inspiration-overlay"><span>02 — TIMELESS</span><h3>Contemporary Living</h3></div>
+      </article>
+      <article class="inspiration-card">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Natural materials and elegant interiors">
+        <div class="inspiration-overlay"><span>03 — NATURAL</span><h3>Earthy & Organic</h3></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- MATERIALS -->
+  <section class="section soft-section" id="materials">
+    <div class="section-heading">
+      <div><span class="eyebrow">THE DETAILS MATTER</span><h2>Materials for every vision.</h2><p>Compare starting points for the materials that shape your space.</p></div>
+    </div>
+    <div class="material-grid">
+      <article class="material-card"><div class="material-swatch swatch-wood"></div><div class="material-info"><h3>Wood & Flooring</h3><p>Flooring, laminate and finishes</p><a href="#advisor" class="text-link">Find the right fit ↗</a></div></article>
+      <article class="material-card"><div class="material-swatch swatch-stone"></div><div class="material-info"><h3>Tiles & Stone</h3><p>Durable surfaces and textures</p><a href="#advisor" class="text-link">Find the right fit ↗</a></div></article>
+      <article class="material-card"><div class="material-swatch swatch-paint"></div><div class="material-info"><h3>Paint & Finishes</h3><p>Colours that define a room</p><a href="#advisor" class="text-link">Find the right fit ↗</a></div></article>
+      <article class="material-card"><div class="material-swatch swatch-metal"></div><div class="material-info"><h3>Fixtures & Fittings</h3><p>Finishing touches that last</p><a href="#advisor" class="text-link">Find the right fit ↗</a></div></article>
+    </div>
+    <p class="disclaimer">Material categories are examples. Live prices, suppliers and stock are not connected in this demo.</p>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="section-heading">
+      <div><span class="eyebrow">A BETTER WAY TO RENOVATE</span><h2>From first idea to final detail.</h2></div>
+    </div>
+    <div class="steps-grid">
+      <article class="step"><span class="step-number">01</span><span class="step-icon">⌕</span><h3>Explore</h3><p>Discover inspiration, materials and potential contractors.</p></article>
+      <article class="step"><span class="step-number">02</span><span class="step-icon">₹</span><h3>Plan your budget</h3><p>Build an initial cost estimate around your renovation goals.</p></article>
+      <article class="step"><span class="step-number">03</span><span class="step-icon">✦</span><h3>Get guidance</h3><p>Use the Smart Advisor demo to organise your requirements.</p></article>
+      <article class="step"><span class="step-number">04</span><span class="step-icon">⌂</span><h3>Make it real</h3><p>Compare options and plan the next steps for your project.</p></article>
+    </div>
+  </section>
+
+  <!-- SMART ADVISOR -->
+  <section class="section advisor-section" id="advisor">
+    <div class="advisor-copy">
+      <span class="eyebrow">MEET YOUR RENOVATION COMPANION</span>
+      <h2>Big plans?<br><span>Let's make them clearer.</span></h2>
+      <p>Tell Renova what you want to change. Start with a few details and get a suggested planning checklist.</p>
+      <ul class="advisor-benefits">
+        <li>✓ Organise your renovation requirements</li>
+        <li>✓ Identify budget-planning considerations</li>
+        <li>✓ Explore practical next steps</li>
+      </ul>
+    </div>
+    <div class="chat-card">
+      <div class="chat-header"><div class="chat-avatar">✦</div><div><strong>Renova Smart Advisor</strong><p><span class="status-dot"></span> Planning assistant demo</p></div></div>
+      <div class="chat-messages" id="chatMessages" aria-live="polite">
+        <div class="chat-bubble bot-message">Hi! 👋 I'm your Renova planning assistant. What are you hoping to renovate today?</div>
+      </div>
+      <div class="quick-prompts">
+        <button type="button" data-prompt="Help me plan a kitchen renovation">Kitchen</button>
+        <button type="button" data-prompt="Help me plan a full home renovation">Full home</button>
+        <button type="button" data-prompt="Help me plan a renovation budget">My budget</button>
+      </div>
+      <form id="chatForm" class="chat-input">
+        <input id="chatInput" type="text" placeholder="Tell us about your project..." required>
+        <button type="submit" aria-label="Send message">↑</button>
+      </form>
+      <p class="disclaimer">Demo assistant uses predefined guidance; it is not connected to an AI service.</p>
+    </div>
+  </section>
+
+  <!-- LOGIN -->
+  <section class="section login-section" id="login">
+    <div class="login-card">
+      <div class="login-brand"><span class="logo-mark">R</span><span>Welcome to Renova</span></div>
+      <span class="eyebrow">YOUR PROJECT STARTS HERE</span>
+      <h2>Let's get you home.</h2>
+      <p class="muted">Sign in to explore your renovation journey.</p>
+      <form id="loginForm">
+        <label for="loginEmail">Email address</label>
+        <input id="loginEmail" type="email" placeholder="you@example.com" required>
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" type="password" placeholder="Enter your password" required minlength="6">
+        <button class="btn btn-orange btn-full" type="submit">Login →</button>
+        <p id="loginMessage" class="form-message" aria-live="polite"></p>
+      </form>
+      <p class="login-footnote">Demo only. No credentials are sent or stored.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div><span class="eyebrow">YOUR SPACE. YOUR STORY.</span><h2>Ready to reimagine home?</h2><p>Take the first step towards a better renovation plan.</p></div>
+    <a class="btn btn-light" href="#estimator">Estimate your costs ↗</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <a class="logo footer-logo" href="#home"><span class="logo-mark">R</span> renova<span class="logo-dot">.</span></a>
+  <p>Smarter renovation. Better decisions.</p>
+  <div class="footer-links"><a href="#how-it-works">How it works</a><a href="#advisor">Smart Advisor</a><a href="#login">Login</a></div>
+  <p class="footer-copy">© 2026 Renova — Academic project prototype.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
